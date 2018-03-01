@@ -1,2 +1,2 @@
 # curso-tajamar-
-ejercicios de la clase
+ejercicios del curso front end
