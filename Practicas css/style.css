@@ -1,3 +1,8 @@
+
+/*Ejemplo de importacion 
+@import "extras.css";
+*/
+
 /*Especificidad:
 
 a - in line
@@ -11,15 +16,12 @@ a.b.c.d
 
 
 
-
-
-
 /*Selector mediante id : NO SUELEN USARSE
-Especificidad
+Especificidad 0.1.0.0
 */
-#p1¨{color:salmon }
+p.p1.p1¨{color:forestgreen }
 
-
+p.p2¨{color:yellow }
 
 /*Selector mediante clase : LOS MAS IMPORTANTES
 Especificidad: 0.0.1.0
