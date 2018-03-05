@@ -1,0 +1,34 @@
+/*Especificidad:
+
+a - in line
+b - id
+c - class
+d - etiquetas
+a.b.c.d
+
+
+
+
+
+
+
+
+
+/*Selector mediante id : NO SUELEN USARSE
+Especificidad
+*/
+#p1¨{color:salmon }
+
+
+
+/*Selector mediante clase : LOS MAS IMPORTANTES
+Especificidad: 0.0.1.0
+*/
+.p1{color:chocolate }
+
+
+
+/*Selector mediante etiqueta
+Especificidad: 0.0.0.1
+*/
+p{color: brown }
