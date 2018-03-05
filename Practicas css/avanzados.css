@@ -1,0 +1,53 @@
+footer p {
+
+    color: yellowgreen
+}
+
+
+footer:hover p.derechos {
+font-size: 3rem;
+}
+
+
+article p {
+color:blue
+
+ }
+
+ [name]{color: magenta }
+
+ [name="lorem"  ] {color: aquamarine }
+
+ [class="p1"  ] {color: yellowgreen }
+ 
+
+ .p1 {color: lawngreen }
+
+ article p2 {color:firebrick}
+
+ aside a:link {
+     color:limegreen
+ }
+
+ aside a:visited {
+     color:purple
+ }
+ 
+ 
+ section::before {
+    content: "empieza lo bueno";
+    color: salmon"
+}
+ 
+ 
+ section::after {
+     content: "termina lo bueno";
+     color: salmon"
+ }
+section p:: before {
+    counter-increment: section;content: counter(section)
+    " "
+    url(../image/favicon.png);
+}
+ 
+ 
