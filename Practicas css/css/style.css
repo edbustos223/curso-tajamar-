@@ -19,18 +19,18 @@ a.b.c.d
 /*Selector mediante id : NO SUELEN USARSE
 Especificidad 0.1.0.0
 */
-p.p1.p1¨{color:forestgreen }
+/*p.p1.p1¨{color:forestgreen }
 
 p.p2¨{color:yellow }
 
 /*Selector mediante clase : LOS MAS IMPORTANTES
 Especificidad: 0.0.1.0
 */
-.p1{color:chocolate }
+/*.p1{color:chocolate } */
 
 
 
 /*Selector mediante etiqueta
 Especificidad: 0.0.0.1
 */
-p{color: brown }
+/*p{color: brown }*/
