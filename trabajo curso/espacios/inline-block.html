@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+   *{box-sizing: border-box}
+   .container{
+       width: 90%;
+       margin-right: auto;
+       margin-left: auto;
+       border: 1px solid;
+      /* overflow: hidden;*/
+    
+   }
+   .container::after{
+       content: "";
+       display: block;
+       clear: both;
+   }
+
+
+   .container:hover p:nth-of-type(2)
+   {
+       /*display:inline-block;*/
+       visibility: visible;
+   }
+
+    p:nth-of-type(2) {
+       /* display:none;*/
+       visibility: hidden;
+    }
+
+
+
+   p{
+        background-color: salmon;
+        /*margin-right: 5%; */
+        width: 20%;
+        padding: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+      
+    }
+    
+    p:not(:first-of-type){ margin-left: 4px;
+    }
+
+    p:not(:last-of-type){ margin-right: 4px}
+    
+    
+
+</style>
+
+
+<body>
+
+    <div calss="contenedor">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aut numquam, dolorem eum temporibus aspernatur veniam voluptatum illum officia optio fugit itaque maxime dolore ea animi nihil laudantium fuga? Magnam?</p>
+            <p class=" ">Iste quis amet blanditiis nemo in laborum ratione culpa corporis voluptatibus adipisci. Animi facilis facere vitae. Magni veritatis unde ipsa odio eaque quis nemo, similique nobis? Nemo id et fuga?</p>
+            <p>Vel possimus totam hic aspernatur voluptates pariatur facilis quidem. Accusantium ex porro eum aut. Quia veritatis, tempore repudiandae ratione molestias dolores blanditiis accusantium, facilis eveniet in molestiae, nostrum itaque voluptatem?</p>
+            <p>Similique repellendus doloribus dolores atque, esse voluptate animi distinctio possimus facilis, deserunt nesciunt libero laboriosam. A vitae sint at maiores distinctio itaque, necessitatibus nostrum inventore quis velit iusto quaerat dolore.</p>
+
+    </div>
+    
+
+
+</body>
+</html>
