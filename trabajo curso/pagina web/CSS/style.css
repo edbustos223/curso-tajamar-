@@ -1,4 +1,4 @@
-body
+/*body
 
  header h1 {
 
@@ -7,7 +7,7 @@ body
 h2 {
     font-style: italic;
     font-weight: bold
-}
+}*/
 
 
 /*header
@@ -23,3 +23,31 @@ footer {
     color: yellowgreen
 }*/
 
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+	color: forestgreen;
+	font-family: 'Rammetto One', cursive;;
+}
+
+h2{
+
+}
+
+body{
+	color: blue;
+	font-family: 'Roboto', sans-serif;
+}
+/*margen pilas*/
+
+.contenedor{
+    width: 90%;
+    max-width: 10080px;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  2rem;
+    margin-bottom: 2rem
+}
