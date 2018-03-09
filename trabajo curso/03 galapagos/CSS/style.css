@@ -37,9 +37,12 @@ h2{
 }
 
 body{
-	color: blue;
+	color: #566573  ;
 	font-family: 'Roboto', sans-serif;
-}
+    background-color: yellowgreen;
+    height: 100vh;
+    
+    }
 /*margen pilas*/
 
 .contenedor{
@@ -87,8 +90,3 @@ img{
 }
 
 
-body{
-background-color: yellowgreen;
-height: 100vh;
-
-}
