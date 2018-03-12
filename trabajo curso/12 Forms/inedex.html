@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .control-group {
+            padding: .4rem;
+
+        }
+
+        .control-group label {
+            display: inline-block;
+            width: 20%;
+            min-width: 10rem
+        }
+
+        .control-group imput:not([type="button"]) {
+            width: 40%;
+            min-width: 10rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de formulario</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <fieldset>
+                <legend> Datos Personales</legend>
+                <div class="control-group">
+                    <label for="nombre">Escribe tu nombre</label>
+                    <input type="text" name="nombre_user" id="nombre" maxlength="20" autofocus required>
+
+                </div>
+
+                <div class="control-group">
+                    <label for="apellido">Escribe tu apellido</label>
+                    <input type="text" name="e-mail" id="apellido" placeholder="apellido" required minlength="2">
+                </div>
+
+                <div class="control-group">
+                    <label for="email">Escribe tu email</label>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+
+                <div class="control-group">
+                    <label for="pasword">Escribe tu contraseña</label>
+                    <input type="pasword" name="pasword" id="pasword" placeholder="escribe tu contraseña">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <textarea name="datos" id="datos" cols="30" rows="10">no te molestes en enviarnnad </textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend> Datos Academicos</legend>
+                <div class="control-group">
+                    <label for="Curso">Escribe tu curso</label>
+                    <input type="text" name="curso" id="curso" value="Desarrollo web"> </div>
+
+                <div class="cheack-group">
+                    <input type="checkbox" name="isok2" id="isok">
+                    <label for="isok">estoy de acuerdo</label>
+                </div>
+
+                <div class="cheack-group">
+                    <input type="checkbox" name="isok2" id="isok2">
+                    <label for="isok2">Tambien estoy de acuerdo con las
+                        <a href="condiciones.html">condiciones</a>
+                    </label>
+                </div>
+                <legend> Que turno quieres</legend>
+                <div class="radio-group">
+                    <input type="radio" name="turno" id="mañana" value="mañana" checked>
+                    <label for="mañana"> mañana</label>
+
+                    <input type="radio" name="turno" id="tarde" value="tarde">
+                    <label for="tarde"> tarde</label>
+
+                    <input type="radio" name="turno" id="noche" value="noche">
+                    <label for="noche"> noche</label>
+                </div>
+                <div class="control-group">
+                    <label for="curso">Selecciona un curso</label>
+
+                    <select name="curso" id="curso" multiple>
+                        <option value="Front">Desarrollo front</option>
+                        <option value="web">Diseñoi web</option>
+                        <option value="servidores o el codigo del curso">Servidores web</option>
+                        <option value="Node">Node</option>
+                        <option value="sql">SQL</option>
+                    </select>
+
+                </div>
+
+
+            </fieldset>
+            <div clas="control group"></div>
+
+            <button type="butoom">saludar
+                <img src="" alt="">
+            </button>
+            <!-- <input type="button" value="saludar"> -->
+
+            <button type="submit">Enviar</button>
+
+            <button type="reset">borar</button>
+
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
