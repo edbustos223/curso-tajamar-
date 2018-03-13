@@ -33,6 +33,14 @@ body{
     
 }
 
+.container2{
+    background-image: url("./imagenes/galapagos png.jpg");
+    color: #566573  ;
+	font-family: 'Itim';
+    background-color: yellowgreen;
+    height: 100vh;
+    width: 90%
+}
 
 
 p{
@@ -49,23 +57,22 @@ p{
 
 
 img{
-    width: 40%;
+    width: 40rem;
+    height: 100%;
     margin-left: 1rem;
     float: none
-   
+
 }
 
 
 aside{
-    border-bottom: .1rem solid;
-    border-top: .1rem solid;
-    width: 50%;
+    width: 30rem;
     float:right;
 }
 
-
-
-
+.caja2{
+    width: 50%
+}
 
 
 
