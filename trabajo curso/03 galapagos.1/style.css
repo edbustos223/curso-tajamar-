@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+
+h1 {
+	color: forestgreen;
+    font-family: 'Rammetto One';
+    text-align: center
+}
+
+
+body{
+    background-image: url("./imagenes/bb.webp") ;
+	color: #566573  ;
+	font-family: 'Itim';
+    background-color: yellowgreen;
+    height: 100vh;
+    width: 100%
+    }
+/*margen pilas*/
+
+.contenedor{
+   
+    width: 90%;
+    max-width: 10080px;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    background: aqua;
+    
+}
+
+
+
+p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  1rem;
+    margin-bottom: 1rem;
+    border: 1px solid lightblue;
+   
+    }
+
+
+
+
+img{
+    width: 40%;
+    margin-left: 1rem;
+    float: none
+   
+}
+
+
+aside{
+    border-bottom: .1rem solid;
+    border-top: .1rem solid;
+    width: 50%;
+    float:right;
+}
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+}
