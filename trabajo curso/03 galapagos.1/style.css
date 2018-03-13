@@ -6,25 +6,23 @@
 h1 {
 	color: forestgreen;
     font-family: 'Rammetto One';
-    text-align: center
+    text-align: center;
+    width: 50%;
 }
 
 
 body{
     background-image: url("./imagenes/bb.webp") ;
 	color: #566573  ;
-	font-family: 'Itim';
-    background-color: yellowgreen;
-    height: 100vh;
-    width: 100%
+    font-family: 'Itim';
+    width: 100%;
+   
     }
 /*margen pilas*/
 
 .contenedor{
    
     width: 90%;
-    max-width: 10080px;
-    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -33,18 +31,8 @@ body{
     
 }
 
-.container2{
-    background-image: url("./imagenes/galapagos png.jpg");
-    color: #566573  ;
-	font-family: 'Itim';
-    background-color: yellowgreen;
-    height: 100vh;
-    width: 90%
-}
-
-
 p{
-    width: 90%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top:  1rem;
@@ -54,28 +42,25 @@ p{
     }
 
 
-
-
 img{
-    width: 40rem;
-    height: 100%;
-    margin-left: 1rem;
-    float: none
-
+    width: 50%;
+    
 }
 
 
-aside{
+
+
+div aside{
     width: 30rem;
     float:right;
+    
 }
 
-.caja2{
-    width: 50%
-}
+
 
 
 
 footer {
     text-align: center;
 }
+
