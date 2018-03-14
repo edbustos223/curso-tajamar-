@@ -1,3 +1,5 @@
- export function saludar()
-console.log('Hola desde el fichero saludos')
+ export function saludar() {
+     console.log('Hola desde el fichero saludos')
+ }
+
 
