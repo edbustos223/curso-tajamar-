@@ -1,0 +1,23 @@
+{
+  "name": "curso-tajamar-",
+  "version": "1.0.0",
+  "description": "ejercicios del curso front end\r clase 1\r visual estudio code\r git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edbustos223/curso-tajamar-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edbustos223/curso-tajamar-/issues"
+  },
+  "homepage": "https://github.com/edbustos223/curso-tajamar-#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
