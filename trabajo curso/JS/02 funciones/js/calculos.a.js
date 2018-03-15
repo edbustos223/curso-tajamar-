@@ -4,30 +4,28 @@
 
 function sumar(a, b) {
     var c = a + b
-    console.log('resultado es', c)
-    return
+    return c
+  
 }//fin de la funcion sumar
 
+
+
 function restar(a, b) {
-    var nonsc = a + b
-    console.log('resultado es', c)
-    return
-} //fin de la funcion restar
+    var c = a + b
+    return c
+} 
 
 //para 2 parametros
-sumar(123, 34);
-sumar(23, 45);
-sumar(2, 5)
-sumar()
+var x =123
+var y=34
+var r=sumar(X+y)
+mostrar(r)
+mostrar (sumar(123, 34))
+mostrar (sumar(23, 45))
+mostrar (sumar(2, 5))
+mostrar (sumar(r))
 
-function mostrar(r){
-    console.log("El resultado es", r)
-}
-
-//paso 2 parametros
-
-mostrar(sumar(123, 34));
-mostrar(sumar(123, 34));
-mostrar(sumar(123, 34));
-mostrar(sumar(123, 34));
-
+var a=123
+var b=34
+var r =restar(b,a)
+mostrar(r)
