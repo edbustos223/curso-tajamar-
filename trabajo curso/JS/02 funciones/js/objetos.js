@@ -22,6 +22,9 @@ console.log(user)
 //otros tipos de objetos
 //array- arreglos
 
+let x = {}
+let y = []
+
 let aDatos = [12, 23, 45, 46, 87]
 let aDatoschungo = [12, `pepe`, true, null, undefined]
 console.log(aDatos)
@@ -57,7 +60,7 @@ let exp = new RegExp()
 let console = new Error()
 
 
-Math.coseno(90) //es uncontendedor
-JSON.parse()
+//Math.coseno(90) //es uncontendedor
+//JSON.parse()
 
 

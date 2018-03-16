@@ -6,4 +6,4 @@ function saludar(){
 
 }
 
-//saludar()
+saludar()
