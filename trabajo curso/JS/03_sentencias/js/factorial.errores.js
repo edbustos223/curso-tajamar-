@@ -9,6 +9,11 @@ function calcularFactorial (n) {
     return r
 }
 
+function calcularFactorial (n) {
+     if (typeof n === `undefined`) {throw 0}
+     else if (isNaN(n/2))
+
+
 
 
 
@@ -22,9 +27,5 @@ console.log(calcularFactorial(4))
 console.log(calcularFactorial(5))
 
 
-function mostrarFactorial (n){
-    let mensaje = `El factorial de ${n}`
-    mensaje += calcularFactorial(n)
-    console.log(mensaje)
-}
 
+}

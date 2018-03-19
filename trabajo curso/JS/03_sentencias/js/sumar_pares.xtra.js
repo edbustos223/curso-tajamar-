@@ -1,45 +1,42 @@
 
 
-let aDatos = [ 23, 54, 65, 34, 78, 67, 57 , 89]
-
-function calcPar(aDatos) {
-    return isNaN(aDatos / 2) ? -1 : parseInt(aDatos) % 2}
-
-
-
-function verSumaPares (aDatos){
-
-    let data = 0
-    total = 0,
-    parciales = []
+/*  Función que comprueba si el argumento es par o impar
+    devolviedo 0, 1, o 
+     -2 si el argumento no es un número
+     -3 si el argumento contene decimales
+*/
+function calcularPar(n) {
+    let r = 0
+    if (isNaN(n / 2)) {
+        r = -2
+    } else if (parseInt(n) != parseFloat(n)) {
+        r = -3
+    } else {
+        r = n % 2
+    }
+    return r
 }
-{
-for (let i = 0; i < aDatos.length; i++) {
-  if(! calcPar(aDatos[i]));
-  data.total += aDatos[i]
-   data.parciales[data.parciales.length] =aDatos[i]
-    
+
+function sumarPares (aDatos) {
+    let data = {
+        total : 0,
+        parciales : []
+    }
+    for (let i = 0; i < aDatos.length; i++) {
+        if (!calcularPar(aDatos[i])) {
+            data.total += aDatos[i]
+            data.parciales[data.parciales.length] = aDatos[i] 
+        }
+    }
+    return data
 }
-return total
-} 
 
+function verSumaPares(aDatos) {
 
-oResultados.parciales
-
-function verSumaPares(aDatos){
-    let oResultados = sumarPares(aDatos)
-
-    for (let i = 0; i < oResultados.parciales.length; i++)
-    console.log(`El parcial es ${oResultados.total} , `)
+    //console.log(`El parcial es ${total}`)
+    console.log('El resultado de la suma de los pares es',
+                    sumarPares(aDatos))
 }
-console.log(`El resultado de la suma de los pares es `, oResultados.total)
 
-
-
-
-/* calcular par (x)  utilizo el booleano invertido para calcular el boleano
-(calularpar (x))
-(!-)  */
-
-
-
+let aDatos = [23, 54, 65, 34, 78, 67, 57, 89]
+verSumaPares(aDatos)
