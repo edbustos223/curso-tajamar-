@@ -1,7 +1,7 @@
 
 try {
-    //let x = noExite()
-    throw  noExiste()
+    throw "Error de programa"
 } catch (error) {
     alert(error)
 }
+

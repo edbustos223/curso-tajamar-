@@ -1,71 +1,58 @@
-const userpepe = {
-    nombre: "pepe",
-    apellido: "perez",
-    edad: 17,
-    aficiones: [`deporte`, `papiroflexia`],
-    isCasado: false,
-    genero: `M`
-}
+const userPepe = {
+    nombre : 'Pepe',
+    apellido : 'Perez',
+    edad : 17,
+    aficiones : ['deporte', 'papiroflexia'],
+    isCasado : false,
+    genero :  'M'}
 
-
-
-const usermaria = {
-    nombre: "maria",
-    apellido: "lopez",
-    edad: 53,
-    aficiones: [`papiroflexia`, `lectura`],
-    isCasado: true,
-    genero: `F`
-}
+const userMaria = {
+    nombre : 'Maria',
+    apellido : 'Lopez',
+    edad : 53,
+    aficiones : ['papiroflexia', 'lectura'],
+    isCasado : true,
+    genero :  'F'
+    }
 
 const MAYORIAEDAD = 18
 
-
-function crearsaludo(user) {
-    let mensaje = `hola`
-
-    if (user.edad >= MAYORIAEDAD && user.genero == `M`) {
-        mensaje += `D.`
-    } else if (user.edad >= MAYORIAEDAD && user.genero == `f`) {
-        mensaje += `Dña`
+function crearSaludo(user) {
+    let mensaje = 'Hola ' 
+    if (user.edad >= MAYORIAEDAD && user.genero == 'M') {
+        mensaje += 'D. '
+    } else if(user.edad >= MAYORIAEDAD && user.genero == 'F') {
+        mensaje += 'Dña. '
     }
-
-    mensaje + user.nombre
-    if (user.isCasado) {
-        if (user.genero == `M`) {
-            mensaje += `. saludos a tu mujer`
+    mensaje += user.nombre
+    if ( user.isCasado ) {
+        if (user.genero == 'M') {
+            mensaje += '. Saludos a tu mujer'
         } else {
-            mensaje += `. saludos a tu marido`
-        }
+            mensaje += '. Saludos a tu marido'
+        }   
     }
     return mensaje
 }
 
 function saludar(usuario) {
-    console.log(crearsaludo(usuario))
+    console.log(crearSaludo(usuario))
 }
 
-
-//PILAS este silo quitas es para revisarlo en el navegador
-function saludarHtml(user) {                  
-    document.write(crearsaludo(user) + `<br>`)
-
-
+function saludarHtml(usuario) {
+    document.write(crearSaludo(usuario)+'<br>')
 }
 
-saludar(usermaria)
-saludar(userpepe)
-saludarHtml(usermaria)
-saludarHtml(userpepe)
+saludar(userMaria)
+saludar(userPepe)
+saludarHtml(userMaria)
+saludarHtml(userPepe)
 
 
-if (1){}
+/* if ( 1 ) {}
 else {}
-
-if(1){}
-else if (2) {}
-else if (3) {}
+if ( 1 ) {}
+else if ( 2 ) {}
+else if ( 3 ) {} 
 else {}
-
-
-
+ */
