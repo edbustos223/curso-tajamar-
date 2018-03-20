@@ -1,14 +1,18 @@
-//declaracion de la funcion
+// Invocación de la función
+mostrar('Pepe')
 
-function mostrar (n){
-    console.log(`me han pasado ${n}`)
+// Declaración de la funcion
+// Hiting de funciones
+function mostrar (n) {
+    console.log(`Me han pasado ${n}`)
 }
 
-//invocacion a la funcion
-mostrar (`pepe`)
+// Funcion === Objeto
+// Función anónima
+// Asignación de la función a una variable
+let mostrarVariable = function (n) { 
+    console.log(`Me han pasado ${n}`)
+}
 
-//creadas por el constructor function
-
-//function ===Objeto !
-//function aninima
-let x = function (n) {console.log(`me han pasado ${n}`)}
+// Invocación de la función
+mostrarVariable('Juan')
