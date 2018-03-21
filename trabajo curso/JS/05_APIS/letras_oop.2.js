@@ -1,77 +1,39 @@
-(function () {
-
 appMayusculas = {
-    cadena: ``,
+    cadena: '',
     codigo: 0,
-    aMensajes : [
-        `SE MEZCLAN  Mayúsculas y minúsculas`,
-        `Todas las Letras son Mayúsculas`,
-        `Todas las Letras son minúsculas`],
-    aCadenas = [
-            `HOLA PEPE`
-            `hola pepe`
-            `Hola Pepe`
-        ],
-    Comprobar: function () { 
-        let r = 0
-      
-        if (this.toUpperCase() === this) {
-            //todo en mayusculas
-            this.codigo=1
-        } else if ( this.toLowerCase() === this){
-            //todo en minusculas
-            this.codigo=2
+    aMensajes: [
+        'se mezclan Mayúsculas y minúsculas',
+        'todas las letras son Mayúsculas',
+        'todas las letras son minúsculas'],
+    aCadenas : [
+        'HOLA PEPE',
+        'hola pepe',
+        'Hola Pepe'
+    ],
+    comprobar: function () {
+        if (this.cadena.toUpperCase() === this.cadena) {
+            this.codigo = 1
+        } else if (this.cadena.toLowerCase() === this.cadena) {
+            this.codigo = 2
+        } else {
+            this.codigo = 0
         }
-      
-    
-    }, 
-    mostrar: function(){
+    },
+    mostrar: function () {
         this.comprobar()
-        let sMensaje = 
-        `En la frase ${this.cadena}
-        ${this.aMensajes[this.codigo]}`
-    
+        let sMensaje = `
+                En la frase "${this.cadena}"
+                ${this.aMensajes[this.codigo]}`
         console.log(sMensaje)
     },
-    probar: function(){
+    probar: function () {
         for (let i = 0; i < this.aCadenas.length; i++) {
             this.cadena = this.aCadenas[i];
             this.mostrar()
-            
         }
     }
 }
 
 appMayusculas.probar()
-
-
-
-
-/*console.log(ComprobarMayusculas(`HOLA PEPE`)) //1
-console.log(ComprobarMayusculas(`hola pepe`)) //2
-console.log(ComprobarMayusculas(`Hola Pepe`))//0  */
-
-
-
-
-appMayusculas.cadena = 
+appMayusculas.cadena = 'Un anillo para controlarlos a todos'
 appMayusculas.mostrar()
-
-
-}
-)
-
-/* function MostrarComparacionMayusculas(cadena){
-    
-    let sMensaje = 
-    `En la frase ${cadena}
-    ${aMensajes[ComprobarMayusculas(cadena)]}`
-
-    console.log(sMensaje)
-}
- /*
-
-/* MostrarComparacionMayusculas(`HOLA PEPE`)//1
-MostrarComparacionMayusculas(`hola pepe`) //2
-MostrarComparacionMayusculas(`Hola Pepe`)//0 */
-
