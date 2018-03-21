@@ -13,11 +13,14 @@ var nombre = "carlos",
  b = edad
  
 
-/* if (b >= 18 && a == "carlos" ){
+ if (b >= 18 && a == "carlos" ){
      document.write("si")
  } else {
      document.write("no" )
- }  */
+ }  
+
+
+ 
 
  if  (a){
      document.write(`ok`)

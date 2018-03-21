@@ -17,6 +17,7 @@ let code =  dni%23
 let aLetras = [ `z`,`b`,`c`,`d`,`e`,`f`,`h`,`k`,`g`,`l`,`h`,`m`,`i`,`s`,`j`,]; aLetras[code]
 
 console.log(aLetras.length)
+console.log(`reverse`,aLetras)
 
 //metodos de Arrays
 //inmutables
